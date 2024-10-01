@@ -1,1 +1,6 @@
 npx lint-staged
+git diff --cached --name-only | grep -q "^index.ts$"
+if [ $? -eq 0 ]; then
+  echo "You are trying to push changes to index.ts, which is not allowed."
+  exit 1
+fi
