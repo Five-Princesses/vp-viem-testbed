@@ -1,3 +1,3 @@
-const vp = 'Hello World!';
+import fetchMembersOfSecurityCouncil from './arbitrum/fetchMembersOfSecurityCouncil';
 
-console.log(vp);
+fetchMembersOfSecurityCouncil();
