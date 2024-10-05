@@ -18,6 +18,8 @@ npm install -g ts-node
 ```bash
 ts-node -v
 # v10.9.2
+nvm alias default 18.18.0
+# default -> 18.18.0 (-> v18.18.0)
 ```
 
 ### Install Dependencies
