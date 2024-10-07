@@ -1,5 +1,5 @@
 import { ReadContractErrorType } from 'viem';
-import { mainnetPublicClient } from '../clients/publicClient';
+import { mainnetPublicClient } from '../../clients/publicClient';
 
 const abi = [
   {
