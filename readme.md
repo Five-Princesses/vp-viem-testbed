@@ -20,7 +20,8 @@ ts-node -v
 # v10.9.2
 ```
 
-### set node version
+### Set Default Node Version
+
 ```bash
 nvm alias default 18.18.0
 # default -> 18.18.0 (-> v18.18.0)
