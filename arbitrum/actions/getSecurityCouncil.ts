@@ -1,5 +1,16 @@
-import type { Transport, Chain, Account, Client, Address } from 'viem';
+import type {
+  Transport,
+  Chain,
+  Account,
+  Client,
+  Address,
+  GetChainParameter,
+} from 'viem';
 
+export type GetSeucurityCouncilParameters<
+  chain extends Chain | undefined = Chain | undefined,
+  chainOverride extends Chain | undefined = Chain | undefined,
+> = GetChainParameter<chain, chainOverride> & {};
 export type GetSecurityCouncilReturnType = {
   members: Address[];
 };
@@ -29,7 +40,8 @@ export async function getSecurityCouncil<
   account extends Account | undefined,
   chainOverride extends Chain | undefined = undefined,
 >(
-  client: Client<Transport, chain, account>
+  client: Client<Transport, chain, account>,
+  args: GetSecurityCouncilParameters<chain, chainOverride>
 ): Promise<GetSecurityCouncilReturnType> {
   // if (!game) throw new GameNotFoundError();
   return game;
